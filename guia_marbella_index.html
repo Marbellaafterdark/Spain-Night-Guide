@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin de Semana de Lujo en Marbella | Guía Exclusiva & Amazon Slots</title>
+    <meta name="description" content="Descubre cómo vivir un fin de semana de lujo en Marbella: mejores hoteles, restaurantes, vida nocturna en Puerto Banús y el mejor entretenimiento premium con Amazon Slots.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Google Fonts for Luxury Aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%);
+        }
+        .text-gold {
+            color: #d4af37;
+        }
+        .border-gold {
+            borderColor: #d4af37;
+        }
+        .luxury-dark {
+            background-color: #0c0a09; /* stone-950 */
+        }
+        .accordion-content {
+            transition: max-height 0.3s ease-in-out, padding 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .accordion-content.open {
+            max-height: 400px;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            margin: auto;
+            height: 320px;
+        }
+    </style>
+</head>
+<body class="luxury-dark text-stone-100 font-sans antialiased leading-relaxed">
+
+    <header class="bg-stone-950/90 border-b border-stone-800 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-y-3 sm:gap-y-0">
+            <!-- Logo -->
+            <a href="#" class="text-xl md:text-2xl font-serif tracking-widest text-white font-bold">
+                M R B <span class="text-gold font-light">L U X E</span>
+            </a>
+            
+            <!-- Navigation (Siempre visible en el header) -->
+            <nav class="flex flex-wrap justify-center items-center gap-x-3 sm:gap-x-6 md:gap-x-8 gap-y-2 text-[10px] md:text-xs uppercase tracking-widest font-semibold text-stone-300">
+                <a href="#amazon-slots" class="flex items-center transition-all duration-300 mr-1 sm:mr-2">
+                    <img src="https://amazonslots.info/pics/logo.webp" alt="Amazon Slots App" class="h-5 sm:h-6 md:h-7 w-auto object-contain hover:brightness-110 transition duration-300" onerror="this.onerror=null; this.src='https://placehold.co/120x30/1c1917/d4af37?text=Amazon+Slots';" />
+                </a>
+                <a href="#hoteles" class="hover:text-gold transition-colors duration-200">Hoteles</a>
+                <a href="#zonas" class="hover:text-gold transition-colors duration-200">Zonas</a>
+                <a href="#gastronomia" class="hover:text-gold transition-colors duration-200">Restaurantes</a>
+                <a href="#vida-nocturna" class="hover:text-gold transition-colors duration-200">Vida Nocturna</a>
+                <a href="#itinerario" class="hover:text-gold transition-colors duration-200">Guía</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+        <!-- Premium Fallback Placeholder Image with Dark overlay for text readability -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/1c1917/a8a29e?text=Marbella+Luxury+Coastline');"></div>
+        <div class="absolute inset-0 bg-stone-950/80"></div>
+        
+        <div class="relative z-10 text-center space-y-6 max-w-4xl mx-auto px-4">
+            <span class="text-gold text-xs font-bold tracking-[0.3em] uppercase block">La escapada definitiva en la Costa del Sol</span>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif text-white leading-tight">
+                Fin de semana de <br><span class="italic font-light">lujo en Marbella</span>
+            </h1>
+            <div class="w-16 h-[1px] bg-gold mx-auto my-6"></div>
+            <p class="text-stone-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-light">
+                Un recorrido exclusivo por la milla de oro del hedonismo mediterráneo. Yates, alta cocina, exclusividad y el mejor entretenimiento digital de nivel VIP.
+            </p>
+            <div class="pt-4">
+                <a href="#itinerario" class="inline-block gold-gradient text-stone-950 px-8 py-3.5 text-xs font-bold uppercase tracking-widest rounded shadow-lg hover:brightness-110 transition duration-300">
+                    Ver Guía Exclusiva
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hoteles" class="max-w-6xl mx-auto px-4 py-16 space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-4">
+            <span class="text-gold text-xs font-bold tracking-widest uppercase">Pernoctaciones de 5 Estrellas GL</span>
+            <h2 class="text-3xl md:text-4xl font-serif text-white">1. Dónde Alojarse</h2>
+            <p class="text-stone-400 text-sm font-light">Para un fin de semana legendario, el hospedaje debe ser extraordinario. Marbella ofrece algunos de los resorts de lujo más icónicos de Europa.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Hotel 1 -->
+            <div class="bg-stone-900 border border-stone-800 rounded-lg overflow-hidden group hover:border-amber-500/30 transition-all duration-300">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://placehold.co/600x400/292524/78716c?text=Marbella+Club" alt="Marbella Club" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                </div>
+                <div class="p-6 space-y-3">
+                    <h3 class="font-serif text-xl text-white">Marbella Club Hotel</h3>
+                    <p class="text-stone-400 text-xs font-light">El refugio mediterráneo de la aristocracia fundado por el Príncipe Alfonso de Hohenlohe. Jardines botánicos y su legendario Beach Club.</p>
+                </div>
+            </div>
+
+            <!-- Hotel 2 -->
+            <div class="bg-stone-900 border border-stone-800 rounded-lg overflow-hidden group hover:border-amber-500/30 transition-all duration-300">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://placehold.co/600x400/292524/78716c?text=Puente+Romano" alt="Puente Romano" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                </div>
+                <div class="p-6 space-y-3">
+                    <h3 class="font-serif text-xl text-white">Puente Romano Resort</h3>
+                    <p class="text-stone-400 text-xs font-light">Diseñado al estilo de un pueblo andaluz, es un santuario gastronómico con discoteca privada, spa Six Senses y templos del tenis.</p>
+                </div>
+            </div>
+
+            <!-- Hotel 3 -->
+            <div class="bg-stone-900 border border-stone-800 rounded-lg overflow-hidden group hover:border-amber-500/30 transition-all duration-300">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://placehold.co/600x400/292524/78716c?text=Anantara+Villa+Padierna" alt="Anantara Villa Padierna" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                </div>
+                <div class="p-6 space-y-3">
+                    <h3 class="font-serif text-xl text-white">Anantara Villa Padierna</h3>
+                    <p class="text-stone-400 text-xs font-light">Un palacio toscano rodeado por tres campos de golf. Paz, obras de arte clásicas y total privacidad para huéspedes VIP.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="zonas" class="bg-stone-950 py-16 border-t border-b border-stone-900">
+        <div class="max-w-6xl mx-auto px-4 space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="text-gold text-xs font-bold tracking-widest uppercase">Microclimas de Glamour</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-white">2. Las Mejores Zonas</h2>
+                <p class="text-stone-400 text-sm font-light">Marbella se divide en distritos con identidades muy marcadas. Selecciona una zona para conocer su personalidad exclusiva.</p>
+            </div>
+
+            <!-- Interactivity: Tabs for Zones -->
+            <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
+                <div class="flex flex-wrap border-b border-stone-800 mb-6 gap-2">
+                    <button id="tab-banus" class="tab-btn active px-4 py-3 text-stone-400 font-semibold text-xs uppercase tracking-wider transition duration-200" onclick="switchZoneTab('banus')">
+                        ⚓ Puerto Banús
+                    </button>
+                    <button id="tab-golden" class="tab-btn px-4 py-3 text-stone-400 font-semibold text-xs uppercase tracking-wider transition duration-200" onclick="switchZoneTab('golden')">
+                        ✨ Milla de Oro
+                    </button>
+                    <button id="tab-old" class="tab-btn px-4 py-3 text-stone-400 font-semibold text-xs uppercase tracking-wider transition duration-200" onclick="switchZoneTab('old')">
+                        🏰 Casco Antiguo
+                    </button>
+                </div>
+
+                <!-- Tab 1: Puerto Banus -->
+                <div id="content-banus" class="zone-content grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-serif text-white">Puerto Banús: Lujo Naútico y Boutiques</h4>
+                        <p class="text-stone-400 text-sm font-light">
+                            El epicentro internacional de los superyates, superdeportivos y las firmas de alta costura mundial (Louis Vuitton, Dior, Hermès). Aquí el glamour se vive al aire libre, paseando por los muelles flanqueados por la mítica montaña de La Concha.
+                        </p>
+                        <div class="bg-stone-950/50 p-4 rounded border border-stone-800/80">
+                            <span class="text-gold text-xs font-bold block mb-1">Recomendación VIP:</span>
+                            <p class="text-xs text-stone-400">Alquila un yate privado al atardecer para ver la costa de Marbella con una copa de champagne Dom Pérignon.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/1c1917/78716c?text=Puerto+Banus+Yachts" alt="Puerto Banus" class="rounded-lg border border-stone-800 shadow-lg" />
+                    </div>
+                </div>
+
+                <!-- Tab 2: Golden Mile -->
+                <div id="content-golden" class="zone-content hidden grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-serif text-white">Milla de Oro: Villas Nobles y Clubs Selectos</h4>
+                        <p class="text-stone-400 text-sm font-light">
+                            El tramo residencial que conecta Marbella ciudad con Puerto Banús. Un santuario de mansiones multimillonarias ocultas tras densos pinares, residencias reales y los hoteles de cinco estrellas más lujosos de Europa. El enclave residencial de mayor prestigio.
+                        </p>
+                        <div class="bg-stone-950/50 p-4 rounded border border-stone-800/80">
+                            <span class="text-gold text-xs font-bold block mb-1">Recomendación VIP:</span>
+                            <p class="text-xs text-stone-400">Pasea por el paseo marítimo de la Milla de Oro al amanecer, una de las zonas de jogging más exclusivas del mundo.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/1c1917/78716c?text=Golden+Mile+Mansions" alt="Golden Mile" class="rounded-lg border border-stone-800 shadow-lg" />
+                    </div>
+                </div>
+
+                <!-- Tab 3: Old Town -->
+                <div id="content-old" class="zone-content hidden grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-serif text-white">Casco Antiguo: Encanto Andaluz e Historia</h4>
+                        <p class="text-stone-400 text-sm font-light">
+                            Un laberinto de callejuelas andaluzas encaladas con buganvillas, naranjos y plazas con siglos de antigüedad. La Plaza de los Naranjos es el corazón idílico, repleto de boutiques con encanto andaluz, restaurantes románticos y restos de antiguas murallas árabes.
+                        </p>
+                        <div class="bg-stone-950/50 p-4 rounded border border-stone-800/80">
+                            <span class="text-gold text-xs font-bold block mb-1">Recomendación VIP:</span>
+                            <p class="text-xs text-stone-400">Disfruta de una copa de vino andaluz de autor en una terraza oculta bajo las murallas iluminadas.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/1c1917/78716c?text=Casco+Antiguo+Marbella" alt="Casco Antiguo" class="rounded-lg border border-stone-800 shadow-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gastronomia" class="max-w-6xl mx-auto px-4 py-16 space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+            <span class="text-gold text-xs font-bold tracking-widest uppercase">Gastronomía Michelin y Mixología</span>
+            <h2 class="text-3xl md:text-4xl font-serif text-white">3. Cena y Cócteles</h2>
+            <p class="text-stone-400 text-sm font-light">Marbella presume de albergar templos gastronómicos con múltiples estrellas Michelin y sofisticados speakeasies.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Gastronomia Item 1 -->
+            <div class="bg-stone-900 border border-stone-800 rounded-xl p-6 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-serif text-2xl text-white">Bibo & Leña por Dani García</h3>
+                        <span class="bg-amber-500/10 text-gold text-[10px] uppercase tracking-widest font-bold px-2 py-1 rounded">Alta Cocina</span>
+                    </div>
+                    <p class="text-stone-400 text-sm font-light">
+                        Ubicados en la Plaza de Puente Romano, estos locales del premiado chef marbellí Dani García ofrecen desde cortes de carne ahumada al fuego en *Leña* hasta un viaje cosmopolita y lúdico en la brasería *Bibo*.
+                    </p>
+                </div>
+                <div class="border-t border-stone-800 pt-4 mt-6 flex justify-between items-center">
+                    <span class="text-xs text-stone-500">Ubicación: Milla de Oro</span>
+                    <span class="text-gold font-bold text-sm">Reserva obligatoria ★★★</span>
+                </div>
+            </div>
+
+            <!-- Gastronomia Item 2 -->
+            <div class="bg-stone-900 border border-stone-800 rounded-xl p-6 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-serif text-2xl text-white">El Portalón Marbella</h3>
+                        <span class="bg-amber-500/10 text-gold text-[10px] uppercase tracking-widest font-bold px-2 py-1 rounded">Cócteles y Bodega</span>
+                    </div>
+                    <p class="text-stone-400 text-sm font-light">
+                        Cocina mediterránea clásica elevada y una excelente selección de vinos tradicionales andaluces. Ideal para cenas tranquilas previas a las fiestas nocturnas más exclusivas.
+                    </p>
+                </div>
+                <div class="border-t border-stone-800 pt-4 mt-6 flex justify-between items-center">
+                    <span class="text-xs text-stone-500">Ubicación: Cerca de Puente Romano</span>
+                    <span class="text-gold font-bold text-sm">Terraza histórica ★★</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vida-nocturna" class="bg-stone-950 py-16 border-t border-stone-900">
+        <div class="max-w-6xl mx-auto px-4 space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="text-gold text-xs font-bold tracking-widest uppercase">Hedonismo en el Mediterráneo</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-white">4. Experiencias de Vida Nocturna</h2>
+                <p class="text-stone-400 text-sm font-light">
+                    Cuando cae la noche, Marbella se enciende. Desde clubs VIP con DJs internacionales hasta salas privadas, la diversión y la adrenalina se fusionan sin límites.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-serif text-white">Clubs Legendarios de Marbella</h3>
+                        <p class="text-stone-400 text-sm font-light">
+                            Espacios icónicos como **Olivia Valere** o las exclusivas zonas reservadas de **Mirage** son donde se congregan jeques, futbolistas y celebridades globales. Botellas magnum, espectáculos visuales de fuego y un ambiente salvajemente exclusivo.
+                        </p>
+                    </div>
+
+                    <!-- Interactive Promotion for Amazon Slots Casino Integration -->
+                    <div id="amazon-slots" class="bg-stone-900 border border-amber-500/30 rounded-2xl p-6 relative overflow-hidden shadow-xl">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl"></div>
+                        <div class="space-y-4 relative z-10">
+                            <div class="flex items-center gap-2">
+                                <span class="text-2xl">🎰</span>
+                                <span class="text-gold text-xs font-bold uppercase tracking-widest">Entretenimiento Móvil Premium</span>
+                            </div>
+                            <h4 class="text-xl font-serif text-white">Amazon Slots: El casino en tu bolsillo para noches VIP</h4>
+                            <p class="text-xs text-stone-400">
+                                ¿Relajándote en la suite privada de tu hotel de 5 estrellas o a bordo de tu yate tras una noche en Puerto Banús? **Amazon Slots** te acompaña como la plataforma de casino online perfecta para añadir emoción VIP.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 text-xs">
+                                <div class="bg-stone-950 p-3 rounded border border-stone-800">
+                                    <span class="text-gold font-bold block">✨ +1000 Slots</span>
+                                    <span class="text-[10px] text-stone-500">Gráficos de alta calidad</span>
+                                </div>
+                                <div class="bg-stone-950 p-3 rounded border border-stone-800">
+                                    <span class="text-gold font-bold block">🛡️ Juego Seguro</span>
+                                    <span class="text-[10px] text-stone-500">Licencias reguladas</span>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#" class="inline-block w-full text-center gold-gradient text-stone-950 text-xs font-bold uppercase tracking-widest py-3 rounded-lg hover:brightness-110 transition duration-300">
+                                    Jugar con Estilo en Amazon Slots
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visualization for Marbella Luxury Rating Matrix (Chart.js) -->
+                <div class="bg-stone-900 border border-stone-800 rounded-2xl p-6 flex flex-col justify-between">
+                    <div class="space-y-2 mb-4">
+                        <h4 class="text-lg font-serif text-white text-center">Índice de Exclusividad en Marbella</h4>
+                        <p class="text-xs text-stone-400 text-center">Una comparativa visual de los factores clave del ocio de élite en Marbella.</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="marbellaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="itinerario" class="max-w-4xl mx-auto px-4 py-16 space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+            <span class="text-gold text-xs font-bold tracking-widest uppercase">Planificación de 72 Horas</span>
+            <h2 class="text-3xl md:text-4xl font-serif text-white">5. Itinerario del Fin de Semana</h2>
+            <p class="text-stone-400 text-sm font-light">Hemos estructurado un plan de acción para que aproveches cada minuto de tu estancia VIP sin contratiempos.</p>
+        </div>
+
+        <!-- Interactive Itinerary Accordions -->
+        <div class="space-y-4">
+            <!-- Day 1 -->
+            <div class="bg-stone-900 border border-stone-800 rounded-xl overflow-hidden">
+                <button class="w-full text-left px-6 py-5 font-serif text-lg text-stone-200 flex justify-between items-center focus:outline-none hover:text-white" onclick="toggleItinerary('day1')">
+                    🥂 Viernes: Bienvenida, Atardecer y Marisco
+                    <span id="icon-day1" class="text-gold transition-transform duration-300">▼</span>
+                </button>
+                <div id="day1" class="accordion-content px-6 text-stone-400 text-sm">
+                    <div class="pb-6 pt-2 border-t border-stone-800/50 space-y-3">
+                        <p><strong>15:00</strong> — Llegada e instalación en el hotel de tu elección (Marbella Club o Puente Romano).</p>
+                        <p><strong>18:30</strong> — Paseo en helicóptero privado o copa de champagne junto a los yates de Puerto Banús.</p>
+                        <p><strong>21:30</strong> — Cena de bienvenida en el restaurante Dani García y posterior cóctel de autor en un lounge con estilo andaluz.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="bg-stone-900 border border-stone-800 rounded-xl overflow-hidden">
+                <button class="w-full text-left px-6 py-5 font-serif text-lg text-stone-200 flex justify-between items-center focus:outline-none hover:text-white" onclick="toggleItinerary('day2')">
+                    ⚓ Sábado: Beach Club, Shopping y Discoteca Privada
+                    <span id="icon-day2" class="text-gold transition-transform duration-300">▼</span>
+                </button>
+                <div id="day2" class="accordion-content px-6 text-stone-400 text-sm">
+                    <div class="pb-6 pt-2 border-t border-stone-800/50 space-y-3">
+                        <p><strong>10:30</strong> — Sesión de compras exclusivas guiada por un Personal Shopper en las firmas de Puerto Banús.</p>
+                        <p><strong>13:30</strong> — Almuerzo en Nikki Beach o La Cabane Beach Club, disfrutando del mar mediterráneo y DJs de renombre.</p>
+                        <p><strong>22:00</strong> — Cena gourmet y entrada directa con reservado VIP en Olivia Valere Club.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="bg-stone-900 border border-stone-800 rounded-xl overflow-hidden">
+                <button class="w-full text-left px-6 py-5 font-serif text-lg text-stone-200 flex justify-between items-center focus:outline-none hover:text-white" onclick="toggleItinerary('day3')">
+                    🍃 Domingo: Desconexión Clásica, Spa y Casco Antiguo
+                    <span id="icon-day3" class="text-gold transition-transform duration-300">▼</span>
+                </button>
+                <div id="day3" class="accordion-content px-6 text-stone-400 text-sm">
+                    <div class="pb-6 pt-2 border-t border-stone-800/50 space-y-3">
+                        <p><strong>11:00</strong> — Mañana de relajación total con un masaje exclusivo en el Spa Six Senses.</p>
+                        <p><strong>14:00</strong> — Almuerzo relajado con tapas de autor en un patio con encanto en la Plaza de los Naranjos.</p>
+                        <p><strong>17:00</strong> — Despedida paseando junto a los muros árabes clásicos de Marbella antes de volver al aeropuerto privado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consejos" class="bg-stone-900 py-16 border-t border-b border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="text-gold text-xs font-bold tracking-widest uppercase">Logística Impecable</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-white">6. Consejos de Viaje</h2>
+                <p class="text-stone-400 text-sm font-light">Para que tu fin de semana de lujo se desarrolle sin un solo roce técnico, toma nota de estas sugerencias clave.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tip 1 -->
+                <div class="space-y-3">
+                    <span class="text-3xl text-gold">✈️</span>
+                    <h4 class="text-lg font-serif text-stone-100">Transporte VIP</h4>
+                    <p class="text-stone-400 text-xs font-light">Contrata con antelación un servicio de chofer privado desde el aeropuerto de Málaga (AGP) o solicita un transfer privado en helicóptero directo al helipuerto del hotel.</p>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="space-y-3">
+                    <span class="text-3xl text-gold">📅</span>
+                    <h4 class="text-lg font-serif text-stone-100">Reserva Anticipada</h4>
+                    <p class="text-stone-400 text-xs font-light">Marbella atrae a la jet-set mundial, por lo que conseguir una mesa en Leña, Bibo o accesos especiales a discotecas requiere reservas de semanas (e incluso meses) de antelación.</p>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="space-y-3">
+                    <span class="text-3xl text-gold">👔</span>
+                    <h4 class="text-lg font-serif text-stone-100">Código de Vestimenta</h4>
+                    <p class="text-stone-400 text-xs font-light">El estilo de Marbella es el "smart-casual sofisticado". Olvida los excesos formales durante el día, pero viste con máxima elegancia por la noche en Puerto Banús.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-950 py-16 border-t border-stone-900">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-10">
+            <!-- Payment support icons mimicking Spanish preferences -->
+            <div class="space-y-2">
+                <p class="text-stone-600 uppercase tracking-widest text-[10px] font-bold">Plataformas y Métodos de Depósito Admitidos</p>
+                <div class="flex flex-wrap justify-center gap-3 opacity-40">
+                    <span class="px-3 py-1 bg-stone-900 text-stone-300 border border-stone-800 rounded text-[10px] font-semibold">Bizum</span>
+                    <span class="px-3 py-1 bg-stone-900 text-stone-300 border border-stone-800 rounded text-[10px] font-semibold">PayPal</span>
+                    <span class="px-3 py-1 bg-stone-900 text-stone-300 border border-stone-800 rounded text-[10px] font-semibold">Visa</span>
+                    <span class="px-3 py-1 bg-stone-900 text-stone-300 border border-stone-800 rounded text-[10px] font-semibold">MasterCard</span>
+                    <span class="px-3 py-1 bg-stone-900 text-stone-300 border border-stone-800 rounded text-[10px] font-semibold">Apple Pay</span>
+                </div>
+            </div>
+
+            <!-- Responsible gambling section -->
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 py-6 border-t border-b border-stone-900">
+                <div class="flex items-center gap-4">
+                    <span class="text-2xl font-bold text-red-500 border border-red-500/50 rounded-full w-10 h-10 flex items-center justify-center">18+</span>
+                    <span class="text-xs font-semibold px-3 py-1.5 bg-stone-900 text-stone-400 rounded border border-stone-800">JUEGO SEGURO</span>
+                    <span class="text-xs font-semibold px-3 py-1.5 bg-stone-900 text-stone-400 rounded border border-stone-800">JUGAR BIEN</span>
+                </div>
+                <p class="text-stone-500 text-[10px] max-w-md text-left md:text-center leading-relaxed">
+                    Las apuestas deben considerarse estrictamente una actividad recreativa. El juego sin control puede desencadenar ludopatía. Juega siempre con moderación, cabeza fría y responsabilidad.
+                </p>
+            </div>
+
+            <div class="space-y-4 text-[11px] text-stone-600">
+                <p class="leading-relaxed max-w-3xl mx-auto">
+                    Este portal tiene fines exclusivamente turísticos, informativos e ilustrativos para la región de Marbella. No promovemos el juego ilegal y sugerimos el uso de operadores con licencias oficiales en vigor bajo la regulación de la DGOJ (Dirección General de Ordenación del Juego).
+                </p>
+                <p class="pt-4 text-stone-700">© 2026 MRB LUXE / Amazon Slots Guide. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        // Zone Tab switcher
+        function switchZoneTab(tabId) {
+            // Remove active classes
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active', 'border-b-2', 'border-amber-500', 'text-gold'));
+            // Hide all contents
+            document.querySelectorAll('.zone-content').forEach(content => content.classList.add('hidden'));
+
+            // Set active class to selected tab
+            const activeBtn = document.getElementById(`tab-${tabId}`);
+            activeBtn.classList.add('active', 'border-b-2', 'border-amber-500', 'text-gold');
+
+            // Show current tab content
+            document.getElementById(`content-${tabId}`).classList.remove('hidden');
+        }
+
+        // Itinerary Accordion toggle
+        function toggleItinerary(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById(`icon-${id}`);
+
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                // Close other elements
+                document.querySelectorAll('.accordion-content').forEach(el => el.classList.remove('open'));
+                document.querySelectorAll('[id^="icon-day"]').forEach(el => el.style.transform = 'rotate(0deg)');
+
+                content.classList.add('open');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Chart.js Radar Initialization (Visual indicators for Luxury factors)
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('marbellaChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Hoteles Exclusivos', 'Gastronomía Michelin', 'Ocio Nocturno VIP', 'Yates & Shopping', 'Privacidad', 'Ocio Móvil / Slots'],
+                    datasets: [{
+                        label: 'Nivel Marbella Luxe (Escala 10)',
+                        data: [10, 9.5, 9, 10, 8.5, 9],
+                        backgroundColor: 'rgba(212, 175, 55, 0.15)', // Light gold opacity
+                        borderColor: 'rgba(212, 175, 55, 1)', // Solid gold border
+                        pointBackgroundColor: 'rgba(212, 175, 55, 1)',
+                        pointBorderColor: '#0c0a09', // stone-950
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: 'rgba(255,255,255,0.08)' },
+                            grid: { color: 'rgba(255,255,255,0.05)' },
+                            pointLabels: {
+                                font: { size: 10, family: 'sans-serif' },
+                                color: '#a8a29e' // stone-400
+                            },
+                            ticks: {
+                                display: false,
+                                max: 10,
+                                min: 0
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+            
+            // Set initial state for tabs
+            switchZoneTab('banus');
+        });
+    </script>
+</body>
+</html>
